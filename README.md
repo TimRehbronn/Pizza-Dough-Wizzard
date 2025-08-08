@@ -12,7 +12,7 @@ This is an interactive Pizza dough calculator based on streamlit for you home-pi
 ## Installation and run app
 
    ```bash
-   git clone <REPO_LINK>
+   git clone https://github.com/TimRehbronn/Pizza-Dough-Wizzard
    cd pizza-dough-app
    pip install -r requirements.txt
    streamlit run app.py
