@@ -1,4 +1,4 @@
-# app.py
+_# app.py
 # -*- coding: utf-8 -*-
 """
 Pizza Dough Wizard Web-App (Streamlit)
@@ -209,9 +209,9 @@ def init_state():
         st.session_state.recipe = Recipe()
     if "eater_df" not in st.session_state:
         st.session_state.eater_df = pd.DataFrame([
-            {"name": "Wenig", "factor": 0.5},
-            {"name": "Normal", "factor": 1.0},
-            {"name": "Viel", "factor": 1.5},
+            {"name": "Wenig-Esser", "factor": 0.5},
+            {"name": "Normal-Esser", "factor": 1.0},
+            {"name": "Viel-Esser", "factor": 1.5},
         ])
     if "lang" not in st.session_state:
         st.session_state.lang = "de"
@@ -224,7 +224,7 @@ def init_state():
 def _localize_eater_names_to(lang: str):
     if "eater_df" not in st.session_state:
         return
-    mapping_de_to_en = {"Wenig": "Light", "Normal": "Normal", "Viel": "Big"}
+    mapping_de_to_en = {"Wenig-Esser": "Light-Eater", "Normal-Esser": "Normal-Eater", "Viel-Esser": "Big-Eater"}
     mapping_en_to_de = {v: k for k, v in mapping_de_to_en.items()}
     df = st.session_state.eater_df.copy()
     if "name" in df.columns:
