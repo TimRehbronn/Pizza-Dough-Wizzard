@@ -224,7 +224,7 @@ def init_state():
 def _localize_eater_names_to(lang: str):
     if "eater_df" not in st.session_state:
         return
-    mapping_de_to_en = {"Wenig-Esser": "Light-Eater", "Normal-Esser": "Normal-Eater", "Viel-Esser": "Big-Eater"}
+    mapping_de_to_en = {"Wenig-Esser": "Weak-Eater", "Normal-Esser": "Normal-Eater", "Viel-Esser": "Heavy-Eater"}
     mapping_en_to_de = {v: k for k, v in mapping_de_to_en.items()}
     df = st.session_state.eater_df.copy()
     if "name" in df.columns:
