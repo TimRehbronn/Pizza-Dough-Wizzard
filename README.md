@@ -9,6 +9,9 @@ This is an interactive Pizza dough calculator based on streamlit for you home-pi
 - Calculates recipe
 - Shows you number of pizzas and possible rest
 
+## Streamlit
+[Pizza-Dough-Wizard](https://pizza-dough-wizzard.streamlit.app)
+
 ## Installation and run app
 
    ```bash
